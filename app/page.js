@@ -6,6 +6,7 @@ import { useState, useRef } from "react";
 import Title from "./components/Title";
 import Divider from "./components/Divider";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 export default function Home() {
 
@@ -28,6 +29,8 @@ export default function Home() {
       <Title />
       <Divider/>
       <About/>
+      <Divider/>
+      <Projects/>
       <Divider/>
     </div>
   );

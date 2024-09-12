@@ -2,3 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  background-color: #1c1917;
+}
+
+.gradient {
+  background: linear-gradient(45deg, #bb00bb, #00bbbb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% 200%;
+  animation: gradient-shift 3s linear infinite;
+}
+
+.gradient-2 {
+  background: linear-gradient(45deg, #4444ff, #22ff22);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% 200%;
+  animation: gradient-shift 3s linear infinite;
+}
+
+
+.gradient-n {
+  background: linear-gradient(45deg, white, #9ca3af);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 100% 100%;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.project {
+  transition: all 0.18s ease;
+}
+
+.project:hover {
+  opacity: .9;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
