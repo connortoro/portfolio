@@ -2,7 +2,7 @@
 
 import Nav from "./components/Nav";
 import react from "react";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Title from "./components/Title";
 import Divider from "./components/Divider";
 import About from "./components/About";
@@ -29,10 +29,52 @@ export default function Home() {
   const [currentSection, setCurrentSection] = useState('Home')
 
   const clickChangeSection = (section) => {
+    if (section === currentSection) {
+      return;
+    }
+    window.removeEventListener('scroll', handleScroll)
     setCurrentSection(section);
-    refTable[section].current.scrollIntoView({behaivor: 'smooth'})
-    //SCROLL???
+    refTable[section].current.scrollIntoView({behavior: 'smooth'})
+    setTimeout(() => {
+      window.addEventListener('scroll', handleScroll)
+    }, 700);
   }
+
+  const isInView = (ref) => {
+    if (!ref.current) return false;
+  
+    const rect = ref.current.getBoundingClientRect();
+    const viewportHeight = window.innerHeight;
+  
+    const topHalfBottom = viewportHeight / 2;
+  
+    return (
+      rect.top < topHalfBottom &&
+      rect.bottom > 75
+    );
+  };
+  
+  
+  
+  const handleScroll = () => {
+    console.log(isInView(homeRef));
+    if(isInView(homeRef)) {
+      setCurrentSection('Home');
+    } else if(isInView(aboutRef) && currentSection !== 'About') {
+      setCurrentSection('About');
+    } else if(isInView(projectsRef) && currentSection !== 'Projects') {
+      setCurrentSection('Projects');
+    } else if(isInView(projectsRef) && currentSection !== 'Projects') {
+      setCurrentSection('Projects');
+    } else if(isInView(experienceRef) && currentSection !== 'Experience') {
+      setCurrentSection('Experience');
+    } else if(isInView(contactRef) && currentSection !== 'Contact') {
+      setCurrentSection('Contact');
+    }
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="flex flex-col justify-center items-center content-center w-screen">

@@ -15,7 +15,7 @@ const stone_300 = '#d6d3d1'
 
 export default function Experience({ myRef }) {
   return (
-    <div ref={myRef} className='flex flex-col items-center justify-center content-center w-[95%] scroll-mt-[7rem]'>
+    <div ref={myRef} className='flex flex-col items-center justify-center content-center w-[95%] scroll-mt-[7rem] mb-0'>
       <h3 className='text-stone-300 mb-[2rem] mt-[1.3rem] font-semibold'>Experience</h3>
         <div className='scale-[.87] sm:w-[80%] w-[100%]'>
         <VerticalTimeline lineColor={stone_800}>
