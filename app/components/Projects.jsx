@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 
-export default function Projects() {
+export default function Projects({ myRef }) {
   return (
-    <div className='flex flex-col items-center justify-center scale-[.6] sm:scale-[.85] md:scale-[1]'>
+    <div  ref={myRef} className='flex flex-col items-center justify-center scale-[.6] sm:scale-[.85] md:scale-[1] scroll-mt-[6rem]'>
       <h3 className='text-stone-300 mb-[2rem] mt-[1.3rem] font-semibold'>Projects</h3>
 
       <a href="https://musical-connections.vercel.app" target="_blank" className='project shadow-2xl flex flex-col bg-gradient-to-r from-stone-800 to-stone-900 h-[20rem] w-[38rem] rounded-[1.5rem] -z-50'>

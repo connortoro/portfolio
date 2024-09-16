@@ -4,6 +4,7 @@
 
 html {
   background-color: #1c1917;
+  scroll-behavior: smooth;
 }
 
 .gradient {

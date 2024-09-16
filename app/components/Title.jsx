@@ -2,9 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-export default function Title() {
+export default function Title({ myRef }) {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div ref={myRef} className='flex flex-col items-center justify-center scroll-mt-[4rem]'>
       <h1 className='md:text-3xl sm:text-2xl text-xl text-stone-400 sm:pt-20 pt-16 text-center sm:w-[40rem] font-normal px-7 md:px-0'>
         <b className='text-stone-200'>Hi 👋, I'm Connor. </b>
           I am a computer science student and a 

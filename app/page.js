@@ -18,24 +18,33 @@ export default function Home() {
   const experienceRef = useRef(null);
   const contactRef = useRef(null);
 
+  const refTable = {
+    'Home': homeRef,
+    'About': aboutRef,
+    'Projects': projectsRef,
+    'Experience': experienceRef,
+    'Contact': contactRef,
+  }
+
   const [currentSection, setCurrentSection] = useState('Home')
 
   const clickChangeSection = (section) => {
     setCurrentSection(section);
+    refTable[section].current.scrollIntoView({behaivor: 'smooth'})
     //SCROLL???
   }
 
   return (
     <div className="flex flex-col justify-center items-center content-center w-screen">
       <Nav navigate={clickChangeSection} selected={currentSection}/>
-      <Title />
+      <Title myRef={homeRef}/>
       <Divider/>
-      <About/>
+      <About myRef={aboutRef}/>
       <Divider/>
-      <Projects/>
+      <Projects myRef={projectsRef}/>
       <Divider/>
-      <Experience/>
-      <Contact/>
+      <Experience myRef={experienceRef}/>
+      <Contact myRef={contactRef}/>
     </div>
   );
 }

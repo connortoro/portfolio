@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function About() {
+export default function About({ myRef }) {
   return (
-    <div className='flex flex-col justify-center items-center content-center'>
+    <div ref={myRef} className='flex flex-col justify-center items-center content-center scroll-mt-[6rem]'>
       <h3 className='text-stone-300 my-[1.3rem] font-semibold'>About</h3>
       <p className='text-stone-400 text-center sm:w-[43rem] font-normal px-7 md:px-0'>As a computer science student I am driven to become a software engineer and make an impact 
         in the tech industry. With a strong passion for problem-solving and a commitment to continuous 
