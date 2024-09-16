@@ -10,7 +10,7 @@ export default function Title() {
           I am a computer science student and a 
         <span className=' text-stone-100 italic'> seasoned </span> 
         software engineering intern ready to 
-        <b className='text-stone-100 font-extrabold gradient-3'> explode<span className='animate-pulse'><span className='text-white'> 💥</span></span> </b>
+        <b className='text-stone-100 font-extrabold'> explode<span className='animate-pulse'><span className='text-white'> 💥</span></span> </b>
         into the world of Full-Stack software development
       </h1>
       <Image className='my-[2rem] rounded-full outline outline-[6px] outline-stone-200'src={'/image.png'} width={75} height={75}/>

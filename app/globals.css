@@ -24,6 +24,16 @@ html {
   animation: gradient-shift 3s linear infinite;
 }
 
+.gradient-3 {
+  background: linear-gradient(45deg, #ff4444, #22ffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% 200%;
+  animation: gradient-shift 3s linear infinite;
+}
+
+
 
 .gradient-n {
   background: linear-gradient(45deg, white, #9ca3af);

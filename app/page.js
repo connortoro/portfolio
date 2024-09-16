@@ -7,6 +7,8 @@ import Title from "./components/Title";
 import Divider from "./components/Divider";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 export default function Home() {
 
@@ -32,6 +34,8 @@ export default function Home() {
       <Divider/>
       <Projects/>
       <Divider/>
+      <Experience/>
+      <Contact/>
     </div>
   );
 }
