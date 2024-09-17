@@ -42,22 +42,21 @@ export default function Home() {
 
   const isInView = (ref) => {
     if (!ref.current) return false;
-  
+
     const rect = ref.current.getBoundingClientRect();
     const viewportHeight = window.innerHeight;
-  
+
     const topHalfBottom = viewportHeight / 2;
-  
+
     return (
       rect.top < topHalfBottom &&
       rect.bottom > 75
     );
   };
-  
-  
-  
+
+
+
   const handleScroll = () => {
-    console.log(isInView(homeRef));
     if(isInView(homeRef)) {
       setCurrentSection('Home');
     } else if(isInView(aboutRef) && currentSection !== 'About') {
