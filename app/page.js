@@ -32,12 +32,8 @@ export default function Home() {
     if (section === currentSection) {
       return;
     }
-    window.removeEventListener('scroll', handleScroll)
     setCurrentSection(section);
     refTable[section].current.scrollIntoView({behavior: 'smooth'})
-    setTimeout(() => {
-      window.addEventListener('scroll', handleScroll)
-    }, 700);
   }
 
   const isInView = (ref) => {
@@ -73,6 +69,9 @@ export default function Home() {
   }
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
