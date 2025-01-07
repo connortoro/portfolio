@@ -27,7 +27,7 @@ export default function Experience({ myRef }) {
           contentArrowStyle={{color: stone_800, borderRight: '7px solid #292524'}}
           date="Expected  May 2025"
           >
-            <h3 className='text-stone-100 font-medium text-xl'>Bachelor's of Computer Science</h3>
+            <h3 className='text-stone-100 font-medium text-xl'>Bachelor&apos;s of Computer Science</h3>
             <h4 className='text-stone-400'>California State University San Marcos</h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
