@@ -5,18 +5,18 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 export default function Title({ myRef }) {
   return (
     <div ref={myRef} className='flex flex-col items-center justify-center scroll-mt-[4rem]'>
-      <h1 className='md:text-3xl sm:text-2xl text-xl text-stone-400 sm:pt-20 pt-16 text-center sm:w-[40rem] font-normal px-7 md:px-0'>
-        <b className='text-stone-200'>Hi 👋, I&apos;m Connor. </b>
+      <h1 className='md:text-3xl sm:text-2xl text-xl text-neutral-400 sm:pt-20 pt-16 text-center sm:w-[40rem] font-normal px-7 md:px-0'>
+        <b className='text-neutral-200'>Hi 👋, I&apos;m Connor. </b>
           I am a computer science student and aspiring
         software engineer ready to make an
-        <b className='text-stone-100 font-extrabold'> impact<span className='animate-pulse'><span className='text-white'> 💥</span></span> </b>
+        <b className='text-neutral-100 font-extrabold'> impact<span className='animate-pulse'><span className='text-white'> 💥</span></span> </b>
         in the world of Full-Stack software development
       </h1>
-      <Image alt="me" className='my-[2rem] rounded-full outline outline-[6px] outline-stone-200' src={'/image.png'} width={75} height={75}/>
+      <Image alt="me" className='my-[2rem] rounded-full outline outline-[6px] outline-neutral-200' src={'/image.png'} width={75} height={75}/>
       <div className='flex flex-row items-center justify-center space-x-3'>
-        <a href='https://docs.google.com/document/d/15oPpxZYwX8td3zWqUaPmrjZ3vVU2d78r/edit' target="_blank" className='rounded-full bg-stone-300 py-[.3rem] px-[.7rem] font-medium text-stone-800'>Get Resume</a>
-        <a href='https://github.com/connortoro' target="_blank" className='text-stone-800 bg-stone-300 text-2xl rounded-full p-[.3rem]'><FaGithub/></a>
-        <a href='https://www.linkedin.com/in/connortoro' target="_blank" className='text-stone-800 bg-stone-300 text-2xl rounded-full p-[.3rem]'><FaLinkedin/></a>
+        <a href='https://docs.google.com/document/d/15oPpxZYwX8td3zWqUaPmrjZ3vVU2d78r/edit' target="_blank" className='rounded-full bg-neutral-300 py-[.3rem] px-[.7rem] font-medium text-neutral-800'>Get Resume</a>
+        <a href='https://github.com/connortoro' target="_blank" className='text-neutral-800 bg-neutral-300 text-2xl rounded-full p-[.3rem]'><FaGithub/></a>
+        <a href='https://www.linkedin.com/in/connortoro' target="_blank" className='text-neutral-800 bg-neutral-300 text-2xl rounded-full p-[.3rem]'><FaLinkedin/></a>
         <a></a>
       </div>
     </div>
