@@ -40,7 +40,7 @@ export default function Experience({ myRef }) {
           >
             <h3 className='text-neutral-100 font-medium text-xl'>Software Engineering Intern</h3>
             <h4 className='text-neutral-300'>Appfolio, remote</h4>
-            <p className='text-neutral-400'>I worked as a full-stack developer on multiple ruby on rails applications</p>
+            <p className='text-neutral-400'>Worked as a full-stack developer on multiple ruby on rails applications</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
           visible={true}
@@ -52,7 +52,7 @@ export default function Experience({ myRef }) {
           >
             <h3 className='text-neutral-100 font-medium text-xl'>Software Engineering Intern</h3>
             <h4 className='text-neutral-300'>Appfolio, remote</h4>
-            <p className='text-neutral-400'>I worked as a full-stack developer using ruby on rails, terraform, and react</p>
+            <p className='text-neutral-400'>Worked as a full-stack developer using ruby on rails, terraform, and react</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
           visible={true}
@@ -64,7 +64,7 @@ export default function Experience({ myRef }) {
           >
             <h3 className='text-neutral-100 font-medium text-xl'>Software Engineering Intern</h3>
             <h4 className='text-neutral-300'>TruData, Carlsbad CA</h4>
-            <p className='text-neutral-400'>did some stuff it was real cool very smart yay</p>
+            <p className='text-neutral-400'></p>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
